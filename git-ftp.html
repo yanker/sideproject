@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="guía, doc, documentación, api doc, catálogo, documentación de código, doc, documentos, documentación, plantilla de documentación, herramienta de documentación, primeros pasos, guía, ayuda, manual, documentación en línea, referencia, especificación">
+	<meta name="description" content="Guidex - Online Multipurpose Documentation HTML Template.">
+	<meta name="author" content="ashishmaraviya">
+
+	<title>SideProject - Documentación Knowledgebase</title>
+
+	<!-- App favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Icon CSS -->
+	<link href="assets/css/vendor/materialdesignicons.min.css" rel="stylesheet">
+	<link href="assets/css/vendor/remixicon.css" rel="stylesheet">
+
+	<!-- Vendor -->
+	<link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/vendor/prism.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link id="mainCss" href="assets/css/style.css" rel="stylesheet">
+	<link id="colorCss" href="assets/css/blue.css" rel="stylesheet">
+	<link href="assets/css/own.css" rel="stylesheet">
+
+	<!-- Dark Mode -->
+	<link href="assets/css/dark-mode/switch.css" rel="stylesheet">
+	<!-- <link href="assets/css/dark-mode/dark-mode.css" rel="stylesheet">
+	<link href="assets/css/dark-mode/grey.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+	<main class="wrapper sb-default">
+
+		<!-- Header -->
+		<header class="gx-header">
+			<div class="container-fluid">
+				<div class="gx-header-items">
+					<a href="index.html" class="gx-toggle-sidebar">
+						<strong><img src="assets/img/favicon/favicon-32x32.png" /> RESUME TECHNOLOGIES</strong>
+					</a>
+					<div class="right-header" style="margin-left: auto;order: 2;">
+						<div class="header-search-box me-3">
+							<div class="header-search-drop">
+								<a href="javascript:void(0)" class="open-search"><i class="ri-search-line"></i></a>
+								<form class="gx-search">
+									<input class="search-input" type="text" placeholder="Buscar...">
+									<a href="javascript:void(0)" class="search-btn"><i class="ri-search-line"></i>
+									</a>
+								</form>
+
+							</div>
+						</div>
+						<div class="form-check form-switch ms-auto mt-2 me-4">
+							<label class="form-check-label ms-3" for="lightSwitch">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+										<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+										<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+									</svg>
+								</svg>
+							</label>
+							<input class="form-check-input lightSwitch" type="checkbox" id="darkMode">
+						</div>
+						<div class="right-header">
+							<a href="javascript:void(0)" class="btn-topic me-1"><i class="ri-menu-2-line"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- main content -->
+		<div class="gx-main-content">
+			<div class="container">
+
+				<!-- Banner Title -->
+				<div class="gx-banner-auth gx-card">
+					<div class=" gx-detail">
+						<div class="gx-image">
+							<img src="assets/img/sections/git-ftp-details.png" alt="GIT FTP">
+						</div>
+						<ul class="auth-detail">
+							<h2 class="text-white">GIT FTP</h2>
+							<p class="text-white">Utilización de manera local de Git-FTP</p>
+							<li><strong>Version: </strong>&nbsp; 1.0.0</li>
+							<li><strong>Data Version : </strong>&nbsp; Nov/2023</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Content -->
+				<div class="row sections">
+					<div class="gx-side-overlay"></div>
+
+					<!-- Menu -->
+					<div class="col-xl-3 col-md-12 gx-topic">
+						<div class="gx-card topic-sidebar">
+							<div class="gx-card-header">
+								<h4 class="gx-card-title">Índice</h4>
+							</div>
+							<div class="gx-card-content gx-topic-list">
+								<nav>
+									<ul class="gx-sb-list">
+										<li class="gx-sb-item sb-drop-item">
+											<a href="javascript:void(0)" class="gx-drop-toggle">
+												<i class="ri-dashboard-3-line"></i>
+												<span class="condense">Primeros Pasos<i
+													   class="drop-arrow ri-arrow-down-s-line"></i></span>
+											</a>
+											<ul class="gx-sb-drop condense">
+												<li class="list"><a href="git-ftp.html#div1"
+													   class="gx-page-link drop"><i
+														   class="ri-record-circle-line"></i>¿Qué son es GIT FTP?</a></li>
+												<li class="list"><a href="git-ftp.html#div2"
+													   class="gx-page-link drop"><i
+														   class="ri-record-circle-line"></i>Instalación de GIT FTP Global</a></li>
+											</ul>
+										</li>
+										<li class="gx-sb-title condense">Configuración y Uso</li>
+										<li class="gx-sb-item sb-drop-item">
+											<a href="javascript:void(0)" class="gx-drop-toggle">
+												<i class="ri-install-line"></i>
+												<span class="condense">Conf & Use<i
+													   class="drop-arrow ri-arrow-down-s-line"></i></span>
+											</a>
+											<ul class="gx-sb-drop condense">
+												<li class="list"><a href="git-ftp.html#div3"
+													   class="gx-page-link drop"><i
+														   class="ri-record-circle-line"></i>Configuración por Proyecto</a></li>
+												<li class="list"><a href="git-ftp.html#div4"
+													   class="gx-page-link drop"><i
+														   class="ri-record-circle-line"></i>Uso Git FTP</a></li>
+												<li class="list"><a href="git-ftp.html#div5"
+													   class="gx-page-link drop"><i
+														   class="ri-record-circle-line"></i>Ficheros Git FTP</a></li>
+											</ul>
+										</li>
+										<li class="gx-sb-title condense">Info</li>
+										<li class="gx-sb-item">
+											<a href="git-ftp.html#resources" class="gx-page-link">
+												<i class="ri-star-smile-line"></i><span class="condense"><span
+														  class="hover-title">Recursos</span> </span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+
+					<!-- Content -->
+					<div class="col-xl-9 col-md-12">
+						<!-- STEP 1 -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block" id="div1">
+								<div class="gx-card-header header-575">
+									<h4 class="gx-card-title">¿Qué es GIT FTP?</h4>
+									<div class="header-tools">
+										<a href="#" class="m-r-10 gx-full-card">
+											<i class="ri-fullscreen-line" title="Full Screen"></i></a>
+									</div>
+								</div>
+								<div class="gx-card-content">
+									<div class="intro">
+										<h1 class="main-heding">¿Qué es GIT FTP?</h1>
+										<p>En resumen, git ftp es una estupenda funcionalidad que hará que podamos subir nuestros commit por FTP a nuestro servidor, es parecido a los pipelines, donde es el servidor del repositorio quein se encarga de hacer el git-ftp correspondiente, pero en este caso lo hace desde nuestro repositorio local, hacia el servidor FTP de nuestro Hosting
+										</p>
+										<p>Aquí hay algunas características clave de GIT FTP:</p>
+										<p>
+											<strong>
+												<ul>
+													<li>- <strong>Fácil de instalar</strong></li>
+													<li>- <strong>Fácil de configurar</strong></li>
+													<li>- <strong>Fácil de usar</strong></li>
+												</ul>
+											</strong>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- STEP 2 -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block" id="div2">
+								<div class="gx-card-header header-575">
+									<h4 class="gx-card-title">Instalación de GIT FTP</h4>
+									<div class="header-tools">
+										<a href="#" class="m-r-10 gx-full-card">
+											<i class="ri-fullscreen-line" title="Full Screen"></i></a>
+									</div>
+								</div>
+								<div class="gx-card-content">
+									<div class="intro">
+										<p>En primer lugar, desde nuestra terminal Git Bash (Windows) con permisos de administrador ejecutamos el siguiente comando:</p>
+										<pre class="language-markup">curl https://raw.githubusercontent.com/git-ftp/git-ftp/master/git-ftp > /bin/git-ftp
+chmod 755 /bin/git-ftp</pre>
+										<p><strong>Note:</strong> the /bin directory is an alias. By default this is the same as C:\Program Files (x86)\Git\usr\bin.</p>
+										<p>Esta instalación solo se realizará una vez en nuestro pc</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- STEP 3 -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block" id="div3">
+								<div class="gx-card-header header-575">
+									<h4 class="gx-card-title">Configuración por proyecto</h4>
+									<div class="header-tools">
+										<a href="#" class="m-r-10 gx-full-card">
+											<i class="ri-fullscreen-line" title="Full Screen"></i></a>
+									</div>
+								</div>
+								<div class="gx-card-content">
+									<div class="intro">
+										<p>Abriremos una terminal y deberemos indicar los datos de conexión al FTP</p>
+										<pre class="language-markup">
+	# Config Directory FTP
+	git config git-ftp.user "usermane"
+	git config git-ftp.password "pasword"
+	git config git-ftp.url "ftp-url" example: ftp://
+</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- STEP 4 -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block" id="div4">
+								<div class="gx-card-header header-575">
+									<h4 class="gx-card-title">Uso de GIT FTP</h4>
+									<div class="header-tools">
+										<a href="#" class="m-r-10 gx-full-card">
+											<i class="ri-fullscreen-line" title="Full Screen"></i></a>
+									</div>
+								</div>
+								<div class="gx-card-content">
+									<div class="intro">
+										<p>Aqui tenemos que diferenciar si ya tenemos archivos en local que queremos que suban al servidor o por el contrario tan solo nuestros siguientes commits</p>
+										<pre class="language-markup">
+# Upload all files: con este comando se suben todos los archivos de nuestro repo local al servidor Y SE GENERA EL FICHERO DE CAMBIOS EN EL SERVIDOR
+git ftp init
+
+# Or if the files are already there: en cambio si nuestro servidor ya dispone de archivos realizaremos este comando para que solo se suban los nuevos cambios Y SE GENERA EL FICHERO DE CAMBIOS EN EL SERVIDOR
+git ftp catchup
+
+# Work and deploy: Test, en este caso a modo de test, creamos un archivo, lo comiteamos y lo subimos al servidor, el servidor comprueba los cambios realiazados y tan solo se sube los archivos commiteados
+# create new document or update document
+git commit index.txt -m "Add new content"
+git ftp push
+
+# 1 file to sync: QUE NOS INDICA EL RESULTADO DE LA SUBIDA
+# [1 of 1] Buffered for upload 'index.txt'.
+# Uploading ...
+# Last deployment changed to ded01b27e5c785fb251150805308d3d0f8117387.
+								</pre>
+										<p>GIT FTP es una genial manera de poder tener nuestros servidor con los últimos cambios de los repositorios en el servidor ,sustituyendo la clásica trasnsferencia de datos por FTP</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- STEP 5 -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block" id="div5">
+								<div class="gx-card-header header-575">
+									<h4 class="gx-card-title">Ficheros de GIT FTP</h4>
+									<div class="header-tools">
+										<a href="#" class="m-r-10 gx-full-card">
+											<i class="ri-fullscreen-line" title="Full Screen"></i></a>
+									</div>
+								</div>
+								<div class="gx-card-content">
+									<div class="intro">
+										<p>Existen dos tipos de ficheros a usar dentro de GIT FTP que son ocionales</p>
+										<p>
+										<ul>
+											<li>
+												<strong>.git-ftp-include</strong>: para incluir los archivos que queramos que subamos al servidor a pesar de que ese directorio esté dentro de .gitignore
+											</li>
+											<li>
+												<strong>.git-ftp-ignore</strong>: para ignorar la subida de archivos, además de los ignorados por gitignore
+											</li>
+										</ul>
+										<p><strong>NOTA:</strong> ambos ficheros son opcionales</p>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- RESOURCES -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block" id="resources">
+								<div class="gx-card-header header-575">
+									<h4 class="gx-card-title">Recursos</h4>
+									<div class="header-tools">
+										<a href="#" class="m-r-10 gx-full-card">
+											<i class="ri-fullscreen-line" title="Full Screen"></i></a>
+									</div>
+								</div>
+								<div class="gx-card-content">
+									<div class="intro">
+
+										<h3>Referencias</h3>
+										<br />
+										<h5>Git FTP</h5>
+										<a href="https://github.com/git-ftp/git-ftp" target="_blank">https://github.com/git-ftp/git-ftp</a>
+										<br /><br />
+										<h5>Youtube Installation</h5>
+										<a href="https://www.youtube.com/watch?v=ZvlwmOD1stA" target="_blank">https://www.youtube.com/watch?v=ZvlwmOD1stA</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Vendor Custom -->
+	<script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/vendor/prism.js"></script>
+	<!-- Switch Dark Mode -->
+	<script src="assets/js/darkmode.js"></script>
+	<!-- Main Custom -->
+	<script src="assets/js/main.js"></script>
+	<a href="#" class="top">&#x21e7;</a>
+</body>
+
+</html>
