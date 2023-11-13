@@ -73,9 +73,9 @@
 							</label>
 							<input class="form-check-input lightSwitch" type="checkbox" id="darkMode">
 						</div>
-						<!-- <div class="right-header">
+						<div class="right-header">
 							<a href="javascript:void(0)" class="btn-topic me-1"><i class="ri-menu-2-line"></i></a>
-						</div> -->
+						</div>
 					</div>
 				</div>
 
@@ -347,28 +347,30 @@
 									<div class="intro">
 										<ul>
 											<li>1. Crearemos en el raiz de cada proyecto un archivo llamado bitbucket-pipelines.yml con el siguiente script</li>
-											<pre class="language-markup">
+											<pre class="language-markup" >
+												<code>
 image: bitnami/git
 
 pipelines:
-	custom:
-		init:
-			- step:
-				name: First Commit - Git Ftp Init
-				script:
-					- apt-get update
-					- apt-get -qq install git-ftp
-					- git reset --hard
-					- git ftp push -vv -u "$FTP_USER" -p "$FTP_PASS" sftp://$FTP_URL/eFactura/ --insecure
-	branches:
-		main:
-			- step:
-				name: Deploy to Production FTP
-				deployment: production
-				script:
-					- apt-get update
-					- apt-get -qq install git-ftp
-					- git ftp push -vv -u "$FTP_USER" -p "$FTP_PASS" sftp://$FTP_URL/NAME_FOLDER_IN_SERVER/ --insecure
+custom: # Definimos este paso previo, que ejecutaremos manualmente en el primer commit realizado para que inicialice el directorio (más detalles abajo)
+	init:
+	- step:
+		name: First Commit - Git Ftp Init
+		script:
+			- apt-get update
+			- apt-get -qq install git-ftp
+			- git reset --hard
+			- git ftp push -vv -u "$FTP_USER_CSOF" -p "$FTP_PASS_CSOF" sftp://$FTP_URL_CSOF/UPV/ --insecure
+branches:
+	main:
+	- step:
+		name: Deploy to Production FTP
+		deployment: production
+		script:
+			- apt-get update
+			- apt-get -qq install git-ftp
+			- git ftp push -vv -u "$FTP_USER_CSOF" -p "$FTP_PASS_CSOF" sftp://$FTP_URL_CSOF/UPV/ --insecure
+												</code>															
 											</pre>
 											<li>2. En dicho script deberemos editar la fila 21 donde indicaremos la carpeta de publicacion del proyecto dentro del servidor.
 
@@ -401,6 +403,10 @@ pipelines:
 										<a href="https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/" target="_blank">https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/</a>
 										<br />
 										<br />
+										<h5>Validador Pipelines</h5>
+										<a href="https://bitbucket-pipelines.atlassian.io/validator" target="_blank">https://bitbucket-pipelines.atlassian.io/validator</a>
+										<br />
+										<br />
 										<h5>Mozilla Server </h5>
 										<a target="_blank" href="https://www.redeszone.net/tutoriales/servidores/filezilla-server-servidor-ftp-ftpes-configuracion-windows/">https://www.redeszone.net/tutoriales/servidores/filezilla-server-servidor-ftp-ftpes-configuracion-windows/</a>
 										<a target="_blank" href="https://www.youtube.com/watch?v=MHW3qfYkZN8">https://www.youtube.com/watch?v=MHW3qfYkZN8</a>
@@ -431,6 +437,7 @@ pipelines:
 	<script src="assets/js/darkmode.js"></script>
 	<!-- Main Custom -->
 	<script src="assets/js/main.js"></script>
+	<a href="#" class="top">&#x21e7;</a>
 </body>
 
 </html>

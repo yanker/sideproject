@@ -3,7 +3,7 @@ docs/
 test/
 logs/
 !logs/.gitkeep
-vendor/
+/vendor/
 public/exports/*
 !public/exports/.gitkeep
 .env
